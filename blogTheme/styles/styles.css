@@ -1,0 +1,296 @@
+@import 'reset.css';
+@font-face
+{
+    font-family: 'vazir';
+    src: url('../fonts/vazir/vazir.eot');
+    src: url('../fonts/vazir/vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/vazir/vazir.ttf') format('truetype'),
+    url('../fonts/vazir/vazir.woff') format('woff'),
+    url('../fonts/vazir/vazir.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+body
+{
+    direction: rtl;
+    background-color: #f0f0f0;
+    font-family: 'vazir';
+}
+input
+{
+    font-family: 'vazir';
+}
+.clearFix
+{
+    clear: both;
+}
+.container
+{
+    width: 850px;
+    /* background-color: blueviolet; */
+    margin: auto;
+    position: relative;
+}
+
+/* start of header */
+#header
+{
+    margin-top: 30px;
+}
+#header .logo img
+{
+    width: 80px;
+}
+#header .titles
+{
+    /* background-color: blue; */
+    display: inline-block;
+    position: relative;
+    top: -18px;
+    right: 12px;
+}
+#header .titles h1
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+#header .titles h2
+{
+    font-size: 15px;
+}
+#header .users
+{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+#header .users .button
+{
+    color: #fff;
+    background: rgb(98, 50, 171);
+    background: linear-gradient(90deg, rgba(98,50,171,1) 0%, rgba(90,128,168,1) 28%, rgba(91,139,95,1) 65%, rgba(175,151,30,1) 100%);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+#header .users .button:hover
+{
+    box-shadow: 1px 1px 5px 0px rgba(140,140,140,0.75);
+}
+
+/* start of navigation */
+#nav
+{
+    background-color: rgb(102, 32, 168);
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#nav ul li
+{
+    display: inline-block;
+}
+#nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 10px;
+    display: inline-block;
+    font-size: 15px;
+    transition: 0.25s;
+}
+#nav ul li a:hover
+{
+    background-color: rgb(150, 92, 204);
+    transition: 0.25s;
+    border-radius: 5px;
+}
+
+/* start of section */
+#content
+{
+    /* background-color: blueviolet; */
+    float: right;
+    width: 69%;
+    margin-top: 20px;
+}
+#content .post-item
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#content .post-item:first-child
+{
+    margin-top: 0;
+}
+#content .post-item .post-title
+{
+    border-bottom: 2px dashed #ccc;
+    font-size: 25px;
+    padding: 10px;
+}
+#content .post-item .post-image img
+{
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ccc;
+}
+#content .post-item .post-image
+{
+    float: right;
+    margin: 7px;
+}
+#content .post-item .post-content
+{
+    padding: 85px;
+    direction: ltr;
+    line-height: 20px;
+    position: relative;
+}
+#content .post-item .post-content .para
+{
+    height: 200px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+#content .post-item .post-data
+{
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+#content .post-item .post-data .info
+{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    float: right;
+    font-size: 10px;
+}
+#content .post-item .post-data .read-more
+{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    font-size: 10px;
+    background-color: rgb(98, 50, 171);
+    padding: 4px;
+    text-decoration: none;
+    border: 1px solid rgb(91, 34, 175);
+    border-radius: 2px;
+    color: black;
+}
+#content .post-item .post-data .read-more:hover
+{
+    background-color: rgb(150, 92, 204);
+    border: 1px solid rgb(150, 92, 204);
+}
+
+/* start of sidebar */
+#aside
+{
+    /* background-color: cornflowerblue; */
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+}
+#aside .sidebar-item
+{
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#aside .sidebar-item:first-child
+{
+    margin-top: 0;
+}
+#aside .sidebar-item .sidebar-header
+{
+    background-color: rgba(90,128,168,1);
+    text-align: center;
+    color: black;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+#aside .sidebar-item .sidebar-heder
+{
+    background-color: darkolivegreen;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+#aside .categories ul li a
+{
+    /* background-color: aquamarine; */
+    text-decoration: none;
+    color: #212121;
+    margin-top: 5px;
+    display: inline-block;
+    border-right: 2px solid #212121;
+    padding-right: 3px;
+    font-size: 12px;
+    transition: 0.35s;
+}
+#aside .categories ul li a:hover
+{
+    border-right: 2px solid rgba(90,128,168,1);
+    margin-right: 7px;
+    transition: 0.35s;
+}
+#aside .sidebar-content
+{
+    padding: 6px;
+}
+#aside .newsLetter p
+{
+    /* background-color: blueviolet; */
+    font-size: 13px;
+    width: 170px;
+    margin: auto;
+    text-align: center;
+    margin-top: 6px;
+    line-height: 20px;
+}
+#aside .newsLetter form
+{
+    text-align: center;
+}
+#aside .newsLetter .input-email
+{
+    /* background-color: pink; */
+    width: 85%;
+    margin-top: 6px;
+    font-size: 12px;
+}
+#aside .newsLetter .submit-btn
+{
+    background-color: darkolivegreen;
+    border: 1px solid darkolivegreen;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-top: 6px;
+}
+#aside .newsLetter .submit-btn:hover
+{
+    background-color: rgb(146, 172, 102);
+    border: 1px solid rgb(146, 172, 102);
+    cursor: pointer;
+}
+/* start of footer */
+#footer
+{
+    background-color: rgba(175,151,30,1);
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    /* display: none; */
+}
